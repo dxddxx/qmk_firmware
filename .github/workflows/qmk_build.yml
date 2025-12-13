@@ -30,10 +30,10 @@ jobs:
       
       - name: Compile firmware
         run: |
-          qmk compile -kb planck/rev7 -km dxddxx
+          qmk compile -kb planck/rev7 -km dxddxx -e OUTPUT_DIR=build_output
 
       - name: Upload firmware artifacts
         uses: actions/upload-artifact@v4
         with:
           name: planck_rev7_dxddxx_firmware
-          path: ./**/*.hex
+          path: build_output/*.hex
