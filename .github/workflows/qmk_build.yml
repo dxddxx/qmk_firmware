@@ -30,6 +30,8 @@ jobs:
       
       - name: Compile firmware
         run: |
+          pwd
+          ls
           cd build_output
           qmk compile -kb planck/rev7 -km dxddxx
 
