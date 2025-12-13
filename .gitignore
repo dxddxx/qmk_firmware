@@ -11,7 +11,7 @@
 
 # Build artifacts
 .clang_complete
-.build/
+# .build/
 *.elf
 *.log
 *.lss
@@ -31,9 +31,9 @@ firmware_list.json
 # QMK-specific
 api_data/v1
 quantum/version.h
-*.bin
+# *.bin
 *.eep
-*.hex
+# *.hex
 *.qmk
 *.uf2
 
