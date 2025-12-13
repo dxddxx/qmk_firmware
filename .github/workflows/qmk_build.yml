@@ -1,0 +1,39 @@
+name: Build QMK Firmware
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install QMK dependencies
+        run: |
+          sudo apt update
+          sudo apt install -y python3-pip git gcc-avr binutils-avr avr-libc dfu-programmer dfu-util gcc-arm-none-eabi binutils-arm-none-eabi
+
+      - name: Install QMK
+        run: |
+          pip3 install qmk
+
+      - name: Setup QMK
+        run: |
+          qmk setup -y .
+      
+      - name: Compile firmware
+        run: |
+          qmk compile -kb planck/rev7 -km dxddxx
+
+      - name: Upload firmware artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: planck_rev7_dxddxx_firmware
+          path: ./**/*.hex
