@@ -41,4 +41,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: planck_rev7_dxddxx_firmware
-          path: .build/*
+          # path: .build/*
+          path: ./*planck_rev7_dxddxx*
