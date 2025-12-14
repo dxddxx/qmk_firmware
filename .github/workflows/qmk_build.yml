@@ -34,7 +34,8 @@ jobs:
           cd .build
           pwd
           qmk compile -kb planck/rev7 -km dxddxx
-          ls
+          cd ..
+          ls .build
 
       - name: Upload firmware artifacts
         uses: actions/upload-artifact@v4
