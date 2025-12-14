@@ -48,7 +48,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         (
         KC_EXLM,      KC_AT,   KC_HASH, KC_DLR,       KC_PERC, KC_CIRC, KC_AMPR,      KC_ASTR, KC_LPRN,  KC_RPRN,         XXXXXXX, XXXXXXX,
         KC_TILD,      XXXXXXX, XXXXXXX, KC_BRMU,      XXXXXXX, KC_HOME, KC_UNDS,      KC_PLUS, KC_END,   KC_DQUO,         XXXXXXX, XXXXXXX,
-        KC_LSFT,      KC_INS,  XXXXXXX, KC_BRMD,      MS_WHLL, MS_WHLR, XXXXXXX,      KC_LCBR, KC_RCBR,  RSFT_T(KC_PIPE), XXXXXXX, XXXXXXX,
+        KC_LSFT,      KC_INS,  XXXXXXX, KC_BRMD,      MS_WHLL, MS_WHLR, XXXXXXX,      KC_LCBR, KC_RCBR,  RSFT_T(S(KC_BSLS)), XXXXXXX, XXXXXXX,
         _______,      _______, _______, XXXXXXX,      _______, _______, XXXXXXX,      XXXXXXX, _______,  _______,        _______, _______
         ),
     [3] = LAYOUT_ortho_4x12
