@@ -10,6 +10,47 @@
  * edit it directly.
  */
 
+/*
+ *
+ * A* and F* goes to L1 on hold, J* and ;* goes to L2 on hold, kc^ is shift on hold.
+ *
+ * Layer 0
+ * Q    W    E    R    T    Y    U    I    O    P    -    =
+ * A*   S    D    F*   G    H    J*   K    L    ;*   Home PgUp
+ * Z^   X    C    V    B    N    M    ,    .    /^   End  PgDn
+ * Ctl  Alt  Gui  Spc  Ms1  Ms2  L4   Gui  Alt  Ctl  Vol- Vol+
+ *
+ * Layer 1
+ * 1    2    3    4    5    ^    &    *    (    )
+ * `         TG5   Vol+ WhUp Home _    +    End  "
+ * Shf  Del  Caps Vol- WhDn WhRt      {    }    |
+ * Ctl  Alt  Gui  Spc  Ms1  Ms2  L4   Gui  Alt  Ctl
+ * 
+ * Layer 2
+ * !    @    #    $    %    6    7    8    9    0
+ * ~              Br+  WhUp PgUp -    =    PgDn '
+ * Shf  Ins       Br-  WhLf WhRt TG3  [    ]    \^
+ * Ctl  Alt  Gui  Spc  Ms1  Ms2  L4   Gui  Alt  Ctl
+ * 
+ * Layer 3
+ * 1    2    3    4    5    6    7    8    9    0
+ * `              Vol+ WhUp PgUp -    =    PgDn '
+ * Shf  Del  Caps Vol- WhDn WhRt TG0  [    ]    \^
+ * Ctl  Alt  Gui  Spc  Ms1  Ms2  L4   Gui  Alt  Ctl
+ * 
+ * Layer 4
+ * F1   F2   F3   F4   F5   F6   F7   F8   F9   F10
+ * Tab  Esc            UGtg Left Down Up   Rght Ent
+ * Shf  Bspc                          F11  F12  RShf
+ * Ctl  Alt  Gui  Spc  Ms1  Ms2  L4   Gui  Alt  Ctl
+ * 
+ * Layer 5
+ *                          Num  7    8    9   Ent
+ *                          +    4    5    6   *
+ * Shf                      -    1    2    3   /
+ * Ctl  Alt  Gui  Spc  Ms1  Ms2  0    .    Alt  Ctl
+ */
+
 const uint16_t PROGMEM ecs_combo[] = {KC_W, KC_E, COMBO_END};
 const uint16_t PROGMEM tab_combo[] = {KC_S, KC_D, COMBO_END};
 const uint16_t PROGMEM bspc_combo[] = {KC_I, KC_O, COMBO_END};
@@ -37,7 +78,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_Q,         KC_W,    KC_E,    KC_R,         KC_T,    KC_Y,    KC_U,         KC_I,    KC_O,     KC_P,            KC_MINS, KC_EQL,
         LT(1,KC_A),   KC_S,    KC_D,    LT(1,KC_F),   KC_G,    KC_H,    LT(2,KC_J),   KC_K,    KC_L,     LT(2,KC_SCLN),   KC_HOME, KC_PGUP,
         LSFT_T(KC_Z), KC_X,    KC_C,    KC_V,         KC_B,    KC_N,    KC_M,         KC_COMM, KC_DOT,   RSFT_T(KC_SLSH), KC_END,  KC_PGDN,
-        KC_LCTL,      KC_LALT, KC_LGUI, KC_SPC,       MS_BTN1, MS_BTN2, MO(4),        KC_RGUI, KC_RALT,  KC_RCTL,         KC_VOLU, KC_VOLD
+        KC_LCTL,      KC_LALT, KC_LGUI, KC_SPC,       MS_BTN1, MS_BTN2, MO(4),        KC_RGUI, KC_RALT,  KC_RCTL,         KC_VOLD, KC_VOLU
         ),
     [1] = LAYOUT_ortho_4x12
         (
