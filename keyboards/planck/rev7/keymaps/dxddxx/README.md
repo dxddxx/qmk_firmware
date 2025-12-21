@@ -11,12 +11,11 @@
     - split keyboard users
     - people who are fine with pressing -= with left hand
 
-### target hardware:
+### target hardware: uni body ansi qwerty keyboard of size ≥ my ideal keyboard
 
-- uni body keyboard of size ≥ my ideal keyboard
-    - from 40% to 100%, including planck, peronic, laptop keyboard, thinkpad keyboard, and other common layouts
-    - my ideal keyboard:
-        - 4x10 ortho, with 26+4 alphas, mods, space, and 2 mouse keys (optional)
+- includes ansi qwerty keyboards from 40% to 100%, planck, peronic, laptop keyboard, thinkpad keyboard ... other common layouts
+- my ideal keyboard:
+    - 4x10 ortho, with 26+4 alphas, mods, space, and 2 mouse keys (optional)
 
 ### features designed according to target audience and hardware:
 
