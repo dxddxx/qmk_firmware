@@ -20,6 +20,7 @@
 ### features designed according to target audience and hardware:
 
 1. keyboard size: 26+4 alphas, bottom row mods, space for both thumbs
+1. surface level functionality of keys are unchanged, so if I put this layout on a random guy's laptop they wouldn't notice
 1. no brainer non-layer access to big keys:
     - combos: (we) for enter, (sd) for tab, (io) for backspace, (kl) for enter
     - mod taps: z and / for shift
