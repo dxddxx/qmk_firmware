@@ -1,19 +1,22 @@
 # QVMP layout by dxddxx
 
 ### target audience: standard ansi qwerty laptop keyboard users who touch type with correct fingers and practices good habits
-    - ansi macbook keyboard with no remap is an example of a standard qwerty laptop keyboard
-    - correct finger is typing 1qaz and 0p;/ with pinky, 5tgb and 6yhn with index, and the rest follows
-    - good habits includes using the opposite hand to press shift while typing caps or symbols, e.g. ! and A with right shift
-        - well established single hand operations like cmd+shift+4 and cmd+minus and cmd+equal are also considered good habits
-    - examples of who this is not for:
-        - non qwerty users
-        - split keyboard users
-        - people who are fine with pressing -= with left hand
+
+- ansi macbook keyboard with no remap is an example of a standard qwerty laptop keyboard
+- correct finger is typing 1qaz and 0p;/ with pinky, 5tgb and 6yhn with index, and the rest follows
+- good habits includes using the opposite hand to press shift while typing caps or symbols, e.g. ! and A with right shift
+    - well established single hand operations like cmd+shift+4 and cmd+minus and cmd+equal are also considered good habits
+- examples of who this is not for:
+    - non qwerty users
+    - split keyboard users
+    - people who are fine with pressing -= with left hand
+
 ### target hardware:
-    - uni body keyboard of size ≥ my ideal keyboard
-        - from 40% to 100%, including planck, peronic, laptop keyboard, thinkpad keyboard, and other common layouts
-        - my ideal keyboard:
-            - 4x10 ortho, with 26+4 alphas, mods, space, and 2 mouse keys (optional)
+
+- uni body keyboard of size ≥ my ideal keyboard
+    - from 40% to 100%, including planck, peronic, laptop keyboard, thinkpad keyboard, and other common layouts
+    - my ideal keyboard:
+        - 4x10 ortho, with 26+4 alphas, mods, space, and 2 mouse keys (optional)
 
 ### features designed according to target audience and hardware:
 
