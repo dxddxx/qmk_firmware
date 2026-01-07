@@ -27,8 +27,8 @@ combo_t key_combos[] = {
     COMBO(zero_combo,    KC_P0),
     COMBO(f0t1_combo,    TG(1)),
     COMBO(f1t6_combo,    TG(6)),
-    COMBO(f1t0_combo,    TG(1)),
-    COMBO(f6t0_combo,    TG(6)),
+    COMBO(f1t0_combo,    TO(0)),
+    COMBO(f6t0_combo,    TO(0)),
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
