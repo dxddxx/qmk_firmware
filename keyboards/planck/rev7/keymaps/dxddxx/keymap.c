@@ -10,19 +10,25 @@
  * edit it directly.
  */
 
-const uint16_t PROGMEM ecs_combo[]     = {KC_W, KC_E,      COMBO_END};
-const uint16_t PROGMEM tab_combo[]     = {KC_S, KC_D,      COMBO_END};
-const uint16_t PROGMEM bspc_combo[]    = {KC_I, KC_O,      COMBO_END};
-const uint16_t PROGMEM ent_combo[]     = {KC_K, KC_L,      COMBO_END};
-const uint16_t PROGMEM zero_combo[]    = {KC_P1, KC_P2,    COMBO_END};
-const uint16_t PROGMEM tg1_combo[]     = {KC_COMM, KC_DOT, COMBO_END};
+const uint16_t PROGMEM ecs_combo[]     = {KC_W, KC_E,       COMBO_END};
+const uint16_t PROGMEM tab_combo[]     = {KC_S, KC_D,       COMBO_END};
+const uint16_t PROGMEM bspc_combo[]    = {KC_I, KC_O,       COMBO_END};
+const uint16_t PROGMEM ent_combo[]     = {KC_K, KC_L,       COMBO_END};
+const uint16_t PROGMEM zero_combo[]    = {KC_P1, KC_P2,     COMBO_END};
+const uint16_t PROGMEM 0to1_combo[]    = {KC_COMM, KC_DOT,  COMBO_END};
+const uint16_t PROGMEM 1to6_combo[]    = {MS_WHLL, MS_WHLR, COMBO_END};
+const uint16_t PROGMEM 1to0_combo[]    = {MS_BTN2, MS_BTN3, COMBO_END};
+const uint16_t PROGMEM 6to0_combo[]    = {KC_P0, KC_PDOT,   COMBO_END};
 combo_t key_combos[] = {
     COMBO(ecs_combo,     KC_ESC),
     COMBO(tab_combo,     KC_TAB),
     COMBO(bspc_combo,    KC_BSPC),
     COMBO(ent_combo,     KC_ENT),
     COMBO(zero_combo,    KC_P0),
-    COMBO(tg1_combo,     TG(1)),
+    COMBO(0to1_combo,    TG(1)),
+    COMBO(1to6_combo,    TG(6)),
+    COMBO(1to0_combo,    TG(1)),
+    COMBO(6to0_combo,    TG(6)),
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -37,28 +43,28 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         (
         _______, _______, _______,      _______, _______, MS_WHLU,      MS_BTN1, MS_UP,    MS_BTN2,       MS_WHLU,  _______, _______,
         _______, _______, _______,      _______, _______, MS_WHLD,      MS_LEFT, MS_DOWN,  MS_RGHT,       MS_WHLD,  _______, _______,
-        _______, _______, _______,      _______, _______, _______,      MS_BTN3, _______,  _______,       _______,  _______, _______,
-        _______, _______, _______,      _______, _______, _______,      _______, MS_BTN1,  MS_BTN2,       _______,  _______, _______
+        _______, _______, _______,      _______, _______, _______,      _______, MS_WHLL,  MS_WHLR,       _______,  _______, _______,
+        _______, _______, _______,      _______, _______, _______,      MS_BTN1, MS_BTN2,  MS_BTN3,       _______,  _______, _______
         ),
     [2] = LAYOUT_ortho_4x12
         (
         KC_1,    KC_2,    KC_3,         KC_4,    KC_5,    KC_CIRC,      KC_AMPR, KC_ASTR, KC_LPRN,        KC_RPRN,  _______, _______,
-        KC_GRV,  XXXXXXX, MO(6),        KC_VOLU, MS_WHLU, KC_HOME,      KC_UNDS, KC_PLUS, KC_END,         KC_DQUO,  _______, _______,
-        KC_LSFT, KC_BSPC, KC_CAPS,      KC_VOLD, MS_WHLD, MS_WHLR,      XXXXXXX, KC_LCBR, KC_RCBR,        KC_PIPE,  _______, _______,
+        KC_GRV,  XXXXXXX, XXXXXXX,      KC_VOLU, XXXXXXX, KC_HOME,      KC_UNDS, KC_PLUS, KC_END,         KC_DQUO,  _______, _______,
+        KC_LSFT, KC_BSPC, KC_CAPS,      KC_VOLD, XXXXXXX, XXXXXXX,      XXXXXXX, KC_LCBR, KC_RCBR,        KC_PIPE,  _______, _______,
         _______, _______, _______,      _______, _______, _______,      _______, KC_RGUI, KC_RALT,        _______,  _______, _______
         ),
     [3] = LAYOUT_ortho_4x12
         (
         KC_EXLM, KC_AT,   KC_HASH,      KC_DLR,  KC_PERC, KC_6,         KC_7,    KC_8,    KC_9,           KC_0,     _______, _______,
-        KC_TILD, XXXXXXX, XXXXXXX,      KC_BRMU, MS_WHLU, KC_PGUP,      KC_MINS, KC_EQL,  KC_PGDN,        KC_QUOT,  _______, _______,
-        KC_LSFT, KC_DEL,  KC_TAB,       KC_BRMD, MS_WHLL, MS_WHLR,      XXXXXXX, KC_LBRC, KC_RBRC, RSFT_T(KC_BSLS), _______, _______,
+        KC_TILD, XXXXXXX, XXXXXXX,      KC_BRMU, XXXXXXX, KC_PGUP,      KC_MINS, KC_EQL,  KC_PGDN,        KC_QUOT,  _______, _______,
+        KC_LSFT, KC_DEL,  KC_TAB,       KC_BRMD, XXXXXXX, XXXXXXX,      XXXXXXX, KC_LBRC, KC_RBRC, RSFT_T(KC_BSLS), _______, _______,
         _______, _______, _______,      _______, _______, _______,      _______, _______, _______,        _______,  _______, _______
         ),
     [4] = LAYOUT_ortho_4x12
         (
         KC_1,    KC_2,    KC_3,         KC_4,    KC_5,    KC_6,         KC_7,    KC_8,    KC_9,           KC_0,     _______, _______,
-        KC_GRV,  XXXXXXX, XXXXXXX,      KC_VOLU, MS_WHLU, KC_PGUP,      KC_MINS, KC_EQL,  KC_PGDN,        KC_QUOT,  _______, _______,
-        KC_LSFT, KC_BSPC, KC_CAPS,      KC_VOLD, MS_WHLD, MS_WHLR,      XXXXXXX, KC_LBRC, KC_RBRC, RSFT_T(KC_BSLS), _______, _______,
+        KC_GRV,  XXXXXXX, XXXXXXX,      KC_VOLU, XXXXXXX, KC_PGUP,      KC_MINS, KC_EQL,  KC_PGDN,        KC_QUOT,  _______, _______,
+        KC_LSFT, KC_BSPC, KC_CAPS,      KC_VOLD, XXXXXXX, XXXXXXX,      XXXXXXX, KC_LBRC, KC_RBRC, RSFT_T(KC_BSLS), _______, _______,
         _______, _______, _______,      _______, _______, _______,      _______, _______, _______,        _______,  _______, _______
         ),
     [5] = LAYOUT_ortho_4x12
