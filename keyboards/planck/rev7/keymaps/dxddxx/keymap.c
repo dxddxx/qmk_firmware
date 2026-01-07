@@ -15,20 +15,20 @@ const uint16_t PROGMEM tab_combo[]     = {KC_S, KC_D,       COMBO_END};
 const uint16_t PROGMEM bspc_combo[]    = {KC_I, KC_O,       COMBO_END};
 const uint16_t PROGMEM ent_combo[]     = {KC_K, KC_L,       COMBO_END};
 const uint16_t PROGMEM zero_combo[]    = {KC_P1, KC_P2,     COMBO_END};
-const uint16_t PROGMEM 0to1_combo[]    = {KC_COMM, KC_DOT,  COMBO_END};
-const uint16_t PROGMEM 1to6_combo[]    = {MS_WHLL, MS_WHLR, COMBO_END};
-const uint16_t PROGMEM 1to0_combo[]    = {MS_BTN2, MS_BTN3, COMBO_END};
-const uint16_t PROGMEM 6to0_combo[]    = {KC_P0, KC_PDOT,   COMBO_END};
+const uint16_t PROGMEM f0t1_combo[]    = {KC_COMM, KC_DOT,  COMBO_END};
+const uint16_t PROGMEM f1t6_combo[]    = {MS_WHLL, MS_WHLR, COMBO_END};
+const uint16_t PROGMEM f1t0_combo[]    = {MS_BTN2, MS_BTN3, COMBO_END};
+const uint16_t PROGMEM f6t0_combo[]    = {KC_P0, KC_PDOT,   COMBO_END};
 combo_t key_combos[] = {
     COMBO(ecs_combo,     KC_ESC),
     COMBO(tab_combo,     KC_TAB),
     COMBO(bspc_combo,    KC_BSPC),
     COMBO(ent_combo,     KC_ENT),
     COMBO(zero_combo,    KC_P0),
-    COMBO(0to1_combo,    TG(1)),
-    COMBO(1to6_combo,    TG(6)),
-    COMBO(1to0_combo,    TG(1)),
-    COMBO(6to0_combo,    TG(6)),
+    COMBO(f0t1_combo,    TG(1)),
+    COMBO(f1t6_combo,    TG(6)),
+    COMBO(f1t0_combo,    TG(1)),
+    COMBO(f6t0_combo,    TG(6)),
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
